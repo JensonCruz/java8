@@ -1,4 +1,4 @@
-package com.jenson.java.lambda;
+package com.jenson.java8.lambda;
 
 import java.util.ArrayList;
 import java.util.List;

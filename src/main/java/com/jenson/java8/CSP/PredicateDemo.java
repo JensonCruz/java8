@@ -1,4 +1,4 @@
-package com.jenson.java.lambda.CSP;
+package com.jenson.java8.CSP;
 
 import java.util.Arrays;
 import java.util.List;

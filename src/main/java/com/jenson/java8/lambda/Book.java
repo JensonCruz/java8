@@ -1,4 +1,4 @@
-package com.jenson.java.lambda;
+package com.jenson.java8.lambda;
 
 public class Book {
 	private int id;
