@@ -2,7 +2,6 @@ package com.jenson.java8.CSP;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Supplier;
 
 public class SupplierDemo {
 
