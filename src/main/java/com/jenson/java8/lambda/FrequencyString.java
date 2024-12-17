@@ -65,7 +65,7 @@ public class FrequencyString {
         List<String> reverse = strings.stream()
         		.map(t-> new StringBuilder(t).reverse().toString())
         		.collect(Collectors.toList());
-        System.out.println("revers: "+ reverse);
+        System.out.println("reverse: "+ reverse);
         
         System.out.println("-----------------------------------------");
         

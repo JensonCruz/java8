@@ -3,6 +3,7 @@ package com.jenson.java8.lambda;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author jensoncruz
@@ -27,14 +28,12 @@ public class LongestWord {
 
 		// Print the result
 		System.out.println("Longest Word: " + longestWord);
-		
-		
+
 		// Find the longest word using max
-        String longestMaxWord = words.stream()
-                .max(Comparator.comparingInt(String::length))
-                .orElse(""); // Handle case where the list is empty
-        
-        
+		String longestMaxWord = words.stream().max(Comparator.comparingInt(String::length)).orElse(""); // Handle case
+																										// where the
+																										// list is empty
+
 		/*
 		 * Step 1: max with Comparator java Copy code
 		 * .max(Comparator.comparingInt(String::length))
@@ -51,8 +50,15 @@ public class LongestWord {
 		 * longest word is found.
 		 */
 
-        // Print the result
-        System.out.println("Longest Word: " + longestMaxWord);
+		// Print the result
+		System.out.println("Longest Word: " + longestMaxWord);
+		
+		// Find strings with length > 4
+        List<String> filteredWords = words.stream()
+                                          .filter(word -> word.length() > 4)
+                                          .collect(Collectors.toList());
+
+        System.out.println("Words with length > 4: " + filteredWords);
 
 	}
 }
